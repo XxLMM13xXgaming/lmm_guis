@@ -72,12 +72,6 @@ net.Receive("LMMGUITest",function()
 	TestBtn:SetPos( 10, 40 )
 	TestBtn:SetSize( DFrame:GetWide() - 20,20 )
 	TestBtn:SetText( "Test Button" )
-  TestBtn.OnCursorEntered = function(self)
-		self.hover = true
-	end
-	TestBtn.OnCursorExited = function(self)
-		self.hover = false
-	end
   LMMGUIDarkThemeBtn(TestBtn)
 	TestBtn.DoClick = function()
     LocalPlayer():ChatPrint("Clicked!")
